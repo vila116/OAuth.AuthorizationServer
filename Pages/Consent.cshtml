@@ -1,0 +1,11 @@
+﻿@page
+@model OAuth.AuthorizationServer.Pages.ConsentModel
+@{
+}
+Consent
+Redirect Url : @Model.ReturnUrl
+<form method="Post">
+
+    <input type="submit" name="grant" value="@Consts.GrantAccessValue" />
+    <input type="submit" name="grant" value="@Consts.DenyAccessValue" />
+</form>
